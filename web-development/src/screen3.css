@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+address,
+blockquote,
+div,
+form,
+fieldset,
+caption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ul,
+li,
+ol,
+ul,
+table,
+tr,
+td,
+th,
+p,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+fieldset {
+    border: none;
+}
+@media (max-width: 480px) {
+    * {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+    }
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 48em; /* for pre CSS3 browsers */
+    font-family: "Open Sans", sans-serif;
+}
+footer {
+    flex-shrink: 0;
+}
+
+header {
+    overflow: hidden; /* wrap floats and margins */
+    zoom: 1; /* trip haslayout, wrap floats and margins legacy IE */
+    max-width: 64em;
+    padding: 0 1em;
+    margin: 0 auto;
+}
+
+* html .widthWrapper {
+    /*
+		legacy IE can't do min/max-width, so shove a fixed width at them.
+		OH WELL, they should be thankful we bother even thinking about the folks
+		still using it!
+	*/
+    width: 48em;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none !important;
+}
+
+#about p {
+    line-height: 130%;
+}
+
+@media (min-width: 64em) {
+	
+	.back {
+		background-color: rgb(0, 32, 255);
+		font-size: 1.5rem;
+        color: black;
+	}
+	
+	.back:hover {
+		opacity: 50%;
+	}
+
+	#about {
+        padding: 6em;
+        background: white;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about p {
+        font-size: 1.5rem;
+        margin-bottom: 2em;
+    }
+
+    .back {
+        margin-top: 1em;
+        padding: 1em 2em 1em 2em;
+        font-size: 1.5rem;
+        background-color: rgb(0, 32, 255);
+        color: white;
+    }
+
+}
+
+@media (max-width: 62em) {
+
+	#about {
+        padding: 1em;
+        max-width: 100vw;
+        background: white;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about p {
+        font-size: 1.5rem;
+        margin-bottom: 2em;
+    }
+
+    .back {
+        margin-top: 1em;
+        padding: 1em 2em 1em 2em;
+        font-size: 1.5rem;
+        background-color: rgb(0, 32, 255);
+        color: white;
+	}
+}

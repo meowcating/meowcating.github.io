@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+address,
+blockquote,
+div,
+form,
+fieldset,
+caption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ul,
+li,
+ol,
+ul,
+table,
+tr,
+td,
+th,
+p,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+fieldset {
+    border: none;
+}
+@media (max-width: 480px) {
+    * {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+    }
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 48em; /* for pre CSS3 browsers */
+    font-family: "Open Sans", sans-serif;
+}
+footer {
+    flex-shrink: 0;
+}
+
+header {
+    overflow: hidden; /* wrap floats and margins */
+    zoom: 1; /* trip haslayout, wrap floats and margins legacy IE */
+    max-width: 64em;
+    padding: 0 1em;
+    margin: 0 auto;
+}
+
+* html .widthWrapper {
+    /*
+		legacy IE can't do min/max-width, so shove a fixed width at them.
+		OH WELL, they should be thankful we bother even thinking about the folks
+		still using it!
+	*/
+    width: 48em;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none !important;
+}
+
+header {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 100vw;
+}
+
+header h1 {
+    font-weight: 700;
+    line-height: 100%;
+}
+
+@media (min-width: 64em) {
+    header {
+		flex-grow: 3;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+	
+	ul {
+		margin-top: 2em;
+		margin-bottom: 2em;
+        line-height: 130%;
+	}
+	
+	li {
+		padding: 0.5em;
+		font-size: 1.5rem;
+        list-style-type: none;
+	}
+	
+	.back {
+		background-color: rgb(0, 32, 255);
+        padding: 1em 100% 1em 100%;
+		margin-top: 1em;
+		font-size: 1.5rem;
+        color: white;
+	}
+	
+	.back:hover {
+		opacity: 50%;
+	}
+
+
+}
+
+@media (max-width: 62em) {
+    body {
+        min-width: 192px;
+    }
+
+    header {
+        padding: 4em;
+        height: auto;
+		visibility: visible;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+	
+	ul {
+		margin-top: 2em;
+		margin-bottom: 2em;
+        line-height: 130%;
+	}
+	
+	li {
+		padding: 0.5em;
+		font-size: 1.5rem;
+        list-style-type: none;
+	}
+	
+	.back {
+        padding: 1em 100% 1em 100%;
+        background-color: rgb(0, 32, 255);
+		margin-top: 1em;
+		font-size: 1.5rem;
+        color: white;
+	}
+	
+}
