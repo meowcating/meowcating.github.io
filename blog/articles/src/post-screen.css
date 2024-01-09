@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+address,
+blockquote,
+div,
+form,
+fieldset,
+caption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ul,
+li,
+ol,
+ul,
+table,
+tr,
+td,
+th,
+p,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+fieldset {
+    border: none;
+}
+@media (max-width: 480px) {
+    * {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+    }
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /* min-width: 48em;  for pre CSS3 browsers */
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    overflow: hidden; /* wrap floats and margins */
+    zoom: 1; /* trip haslayout, wrap floats and margins legacy IE */
+    max-width: 64em;
+    margin: 0 auto;
+}
+
+* html .widthWrapper {
+    /*
+		legacy IE can't do min/max-width, so shove a fixed width at them.
+		OH WELL, they should be thankful we bother even thinking about the folks
+		still using it!
+	*/
+    width: 48em;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none !important;
+}
+
+/* Main */
+
+header {
+    min-width: 100%;
+    background-color: black;
+}
+
+.header {
+    margin: 0 auto;
+    padding: 6em 0;
+    max-width: 62em;
+    width: 80%;
+}
+
+.blog-title {
+    font-weight: 700;
+    font-size: 3em;
+    color: #ffff00;
+    line-height: 100%;
+}
+
+.blog-subtitle {
+    font-weight: 500;
+    font-size: 1.5em;
+    color: white;
+    line-height: 100%;
+}
+
+.blog-post {
+    width: 100%;
+}
+
+.text-box {
+    margin: 0 auto;
+    max-width: 62em;
+    width: 80%; 
+}
+
+.text-title {
+    margin-bottom: 1em;
+    font-size: 3em;
+    line-height: 100%;
+}
+
+.first-title {
+    padding-top: 1em;
+}
+
+.blog-text {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    line-height: 130%;
+}
+
+.blog-text:last-of-type {
+    margin-bottom: 2em;
+}
+
+.no-title p:first-of-type {
+    margin-top: 2em;
+}
+
+.text-list {
+    margin-bottom: 1em;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 130%;
+}
+
+.quote {
+    width: 100%;
+    background-color: black;
+}
+
+.quote-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 62em;
+    width: 80%; 
+    color: white;
+}
+
+.qtm1 {
+    padding-top: 0.5em;
+    font-size: 6em;
+    text-align: center;
+    color: #ffff00;
+    opacity: 50%;
+}
+
+.qtm2 {
+    padding-top: 0.5em;
+    font-size: 6em;
+    color: #ffff00;
+    opacity: 75%;
+}
+
+.quote-text {
+    font-size: 1.5em;
+    line-height: 130%;
+}
+
+.image {
+    margin: 0 auto;
+    max-width: 62em;
+    width: 80%; 
+}
+
+.image img {
+    display: block;
+    max-width: 100%;
+    padding: 4em 0 0 0;
+}
+
+.above-heading {
+    margin-bottom: 8em;
+}
+
+.contact-link {
+    font-weight: 700;
+}
+.contact-link:hover {
+    opacity: 50%;
+}
+
+.email {
+    font-weight: 700;
+}
+
+.share {
+    width: 100%;
+}
+
+.share-box {
+    margin: 0 auto;
+    max-width: 62em;
+    width: 80%; 
+}
+
+.share-title {
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 2em 0;
+    max-width: 62em;
+    width: 80%; 
+    padding: 4em 0 4em 0;
+}
+
+footer small {
+    font-weight: 700;
+    font-size: 3em;
+    color: white;
+    line-height: 100%;
+}
+
+@media (min-width: 62em) {
+
+    .social-icons {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .social-icon {
+        padding-right: 1em;
+    }
+
+    .social-icon:hover {
+        opacity: 50%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+}
