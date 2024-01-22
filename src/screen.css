@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+address,
+blockquote,
+div,
+form,
+fieldset,
+caption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ul,
+li,
+ol,
+ul,
+table,
+tr,
+td,
+th,
+p,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+fieldset {
+    border: none;
+}
+
+@media (max-width: 480px) {
+    * {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+    }
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /* min-width: 48em;  for pre CSS3 browsers */
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    overflow: hidden;
+    /* wrap floats and margins */
+    zoom: 1;
+    /* trip haslayout, wrap floats and margins legacy IE */
+    max-width: 64em;
+    margin: 0 auto;
+}
+
+* html .widthWrapper {
+    /*
+		legacy IE can't do min/max-width, so shove a fixed width at them.
+		OH WELL, they should be thankful we bother even thinking about the folks
+		still using it!
+	*/
+    width: 48em;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none !important;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    min-width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1em;
+    color: white;
+    font-size: 3rem;
+    display: none;
+}
+
+.logo {
+    padding: 0 26em 0 26em;
+}
+.logo img {
+    max-width: 100%;
+}
+
+.links {
+    min-width: 100%;
+    padding: 4em 26em 4em 26em;
+    color: white;
+    text-align: center;
+}
+
+.links-list li {
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+    list-style: none;
+    border-style: none solid none solid;
+    border-width: 2px;
+}
+
+.links-list li:hover {
+    background-color: #ffff00;
+    color: black;
+    cursor: pointer;
+}
+
+.links-list li:active {
+    opacity: 80%;
+}
+
+.contact:hover {
+    cursor: text !important;
+    background-color: black !important;
+    color: white !important;
+}
+
+.services-list .service {
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+    list-style: none;
+    border-style: none solid none solid;
+    border-width: 2px;
+}
+
+.back {
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+    list-style: none;
+    border-style: none solid none solid;
+    border-width: 2px;
+}
+
+.back:hover {
+    background-color: #ffff00;
+    color: black;
+    cursor: pointer;
+}
+
+.back:active {
+    opacity: 80%;
+}
+
+.about {
+    min-width: 100%;
+    padding: 4em 26em 4em 26em;
+    color: white;
+    text-align: center;
+}
+
+.about h1 {
+    margin-bottom: 1em;
+    color: white;
+    font-size: 3rem;
+}
+
+.about p {
+    text-align: left;
+    margin-bottom: 2em;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#newsletter {
+    padding: 4em 26em 4em 26em;
+    text-align: center;
+}
+
+#newsletter h2 {
+    margin-bottom: 1em;
+    color: white;
+    font-size: 3rem;
+}
+
+#newsletter p {
+    margin-bottom: 2em;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-input {
+    margin-bottom: 1em;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+#subscribe {
+    padding: 1em;
+    font-size: 1.5em;
+    border-style: none;
+    background-color: #ffff00;
+    color: black;
+}
+
+#subscribe:hover {
+    cursor: pointer;
+}
+
+#subscribe:active {
+    opacity: 80%;
+}
+
+@media (max-width: 62em) {
+
+    .logo {
+        padding: 0;
+    }
+
+    .links {
+        padding: 0em;
+    }
+
+    .links-list li {
+        padding: 1em 0 1em 0;
+        background-color: #ffff00;
+        color: black;
+        border-style: none;
+    }
+
+    .services-list li {
+        padding: 1em 0 1em 0;
+        border-style: none;
+    }
+
+    #newsletter {
+        padding: 4em 2em 4em 2em;
+    }
+
+    .back {
+        background-color: #ffff00;
+        color: black;
+    }
+
+    .about {
+        padding: 1em 0 1em 0;
+    }
+
+    .about p {
+        padding: 0 1em 0 1em;
+    }
+}
