@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Contrast Tool</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-colors">
+        <div class="color-container">
+          <label for="text-color">Text Color:</label>
+          <input type="color" id="text-color" value="#000000" />
+        </div>
+        <div class="color-container">
+          <label for="bg-color">Background Color:</label>
+          <input type="color" id="bg-color" value="#3277f6" />
+        </div>
+      </div>
+      <div class="result">
+        <div id="preview" contenteditable="true">
+          Enter desired text/paragraph here.<br /><br />
+		  Don't forget to follow #meowcating at LinkedIn, FB and Instagram.
+        </div>
+        <p id="contrast">1</p>
+        <p id="rating">Demo Text</p>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
