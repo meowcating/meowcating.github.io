@@ -97,30 +97,32 @@ header h1 {
     margin-bottom: 1em;
     color: white;
     font-size: 3rem;
-    display: none;
 }
 
 .logo {
     padding: 0 26em 0 26em;
 }
 .logo img {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 .links {
     min-width: 100%;
-    padding: 4em 26em 4em 26em;
+    padding: 4em 36em 4em 36em;
     color: white;
     text-align: center;
 }
 
 .links-list li {
+    margin-top: 0.5em;
     padding: 1em;
     text-align: center;
     font-size: 1.5rem;
     list-style: none;
-    border-style: none solid none solid;
-    border-width: 2px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: black;
+    font-weight: 700;
 }
 
 .links-list li:hover {
@@ -133,62 +135,9 @@ header h1 {
     opacity: 80%;
 }
 
-.contact:hover {
-    cursor: text !important;
-    background-color: black !important;
-    color: white !important;
-}
-
-.services-list .service {
-    padding: 1em;
-    text-align: center;
-    font-size: 1.5rem;
-    list-style: none;
-    border-style: none solid none solid;
-    border-width: 2px;
-}
-
-.back {
-    padding: 1em;
-    text-align: center;
-    font-size: 1.5rem;
-    list-style: none;
-    border-style: none solid none solid;
-    border-width: 2px;
-}
-
-.back:hover {
-    background-color: #ffff00;
-    color: black;
-    cursor: pointer;
-}
-
-.back:active {
-    opacity: 80%;
-}
-
-.about {
-    min-width: 100%;
-    padding: 4em 26em 4em 26em;
-    color: white;
-    text-align: center;
-}
-
-.about h1 {
-    margin-bottom: 1em;
-    color: white;
-    font-size: 3rem;
-}
-
-.about p {
-    text-align: left;
-    margin-bottom: 2em;
-    color: white;
-    font-size: 1.5rem;
-}
 
 #newsletter {
-    padding: 4em 26em 4em 26em;
+    padding: 4em 36em 4em 36em;
     text-align: center;
 }
 
@@ -212,6 +161,7 @@ header h1 {
 .newsletter-input {
     margin-bottom: 1em;
     padding: 1em;
+    border-radius: 4px;
     font-size: 1.5em;
 }
 
@@ -219,8 +169,10 @@ header h1 {
     padding: 1em;
     font-size: 1.5em;
     border-style: none;
+    border-radius: 4px;
     background-color: #ffff00;
     color: black;
+    font-weight: 700;
 }
 
 #subscribe:hover {
@@ -233,19 +185,27 @@ header h1 {
 
 @media (max-width: 62em) {
 
+    header h1 {
+        margin-bottom: 1em;
+        font-size: 1.5rem;
+    }
+
     .logo {
         padding: 0;
     }
 
     .links {
-        padding: 0em;
+        padding: 1em;
     }
 
     .links-list li {
         padding: 1em 0 1em 0;
-        background-color: #ffff00;
-        color: black;
+        margin-top: 0.5em;
         border-style: none;
+        border-radius: 4px;
+        background-color: #ffffff;
+        color: black;
+        font-weight: 700;  
     }
 
     .services-list li {
@@ -255,18 +215,5 @@ header h1 {
 
     #newsletter {
         padding: 4em 2em 4em 2em;
-    }
-
-    .back {
-        background-color: #ffff00;
-        color: black;
-    }
-
-    .about {
-        padding: 1em 0 1em 0;
-    }
-
-    .about p {
-        padding: 0 1em 0 1em;
     }
 }
