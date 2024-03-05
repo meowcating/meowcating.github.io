@@ -93,17 +93,19 @@ header {
     text-align: center;
 }
 
+.logo {
+    padding: 0 26em 0 26em;
+    display: none;
+}
+.logo img {
+    max-width: 50%;
+}
+
 header h1 {
     margin-bottom: 1em;
     color: white;
     font-size: 3rem;
-}
-
-.logo {
-    padding: 0 26em 0 26em;
-}
-.logo img {
-    max-width: 50%;
+    display: none;
 }
 
 .links {
