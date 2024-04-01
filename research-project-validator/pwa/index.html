@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="theme-color" content="#000000" />
+    <title>Research project validator - Algo by The Pudding</title>
+    <link rel="stylesheet" href="css/screen.css" />
+	<link rel="manifest" href="manifest.json" />
+	<link rel="apple-touch-icon" href="images/icons/apple-icon-180.png" />
+  <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Research project validator - App by <span class="pudding"><a href="https://meowcating.online/">Meowcating</a></span></h1>
+    </header>
+    <section id="section0" class="hidden">
+      <ul id="list">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
+    <section id="put-it-down" class="card hidden">
+      <p class="question">Put it down ⏳</p>
+      <button onclick="reset()" class="button">Reset validator</button>
+    </section>
+
+    <section id="publish-it" class="publish hidden">
+      <p class="publish-text">
+        Your uniqe research question ( <span id="unique-question"></span> ) can be answered with existing interesting
+        data which you can collect ethically. It is as well an interesting
+        story, and you are the right person to tell it!<br><br>Make the work and
+        publish it 🚀.
+      </p>
+    </section>
+
+    <section id="section1" class="card">
+      <label for="question" class="question">What is your unique question?</label>
+      <input type="text" id="question" class="text-field" />
+      <button onclick="nextSection()" class="button">Next</button>
+    </section>
+
+    <section id="section2" class="card hidden">
+      <p class="question">Can it be answered with data?</p>
+        <button onclick="nextToExist()" class="button">Yes</button>
+        <button onclick="resetData1()" class="button">No</button>
+    </section>
+
+    <section id="section3" class="card hidden">
+      <p class="question">Do the data exist?</p>
+        <button onclick="nextToEthical()" class="button">Yes</button>
+        <button onclick="putItDown()" class="button">No</button>
+    </section>
+
+    <section id="section4" class="card hidden">
+      <p class="question">Is it ethical?</p>
+        <button onclick="nextToInteresting()" class="button">Definitely!</button>
+        <button onclick="ethicalWarning()" class="button">Maybe not...</button>
+    </section>
+
+    <section id="section4.2" class="card hidden">
+      <p class="question">Find an ethical way to collect data!</p>
+        <button onclick="hideEthicalWarning()" class="button">Ok</button>
+    </section>
+
+    <section id="section5" class="card hidden">
+      <p class="question">Can you collect data yourself?</p>
+        <button onclick="nextToEthical2()" class="button">Yes</button>
+        <button onclick="putItDown()" class="button">No</button>
+    </section>
+
+    <section id="section6" class="card hidden">
+      <p class="question">Are the results of the analysis interesting?</p>
+        <button onclick="nextToRightPerson()" class="button">Yes</button>
+        <button onclick="putItDown()" class="button">No</button>
+        <button onclick="nextToAskFamily()" class="button">Not sure</button>
+    </section>
+
+    <section id="section6.2" class="card hidden">
+      <p class="question">Ask family</p>
+      <button onclick="hideAskFamily()" class="button">Ok</button>
+    </section>
+
+    <section id="section7" class="card hidden">
+      <p class="question">Can you collect data yourself?</p>
+        <button onclick="" class="button">Yes</button>
+        <button onclick="" class="button">No</button>
+    </section>
+
+    <section id="section8" class="card hidden">
+      <p class="question">Are you the right person to tell this story?</p>
+        <button onclick="nexToCreatePlan()" class="button">Yes</button>
+        <button onclick="nextToCollaborate()" class="button">No</button>
+    </section>
+
+    <section id="section8.2" class="card hidden">
+      <p class="question">Collaborate with some who is.</p>
+      <button onclick="hideCollaborate()" class="button">Ok</button>
+    </section>
+
+    <section id="section9" class="card hidden">
+      <p class="question">Create a plan for your data story. Is it still interesting?</p>
+        <button onclick="nextToMakeTheThing()" class="button">Yes</button>
+        <button onclick="nextToTryAgain()" class="button">No</button>
+    </section>
+
+    <section id="section9.2" class="card hidden">
+      <p class="question">Try again.</p>
+        <button onclick="hideTryAgain()" class="button1">Ok</button>
+        <button onclick="putItDown()" class="button">Put it down</button>
+    </section>
+
+    <section id="section10" class="card hidden">
+      <p class="question">Nice, make the thing. Is it still interesting?</p>
+        <button onclick="publishIt()" class="button">Yup!</button>
+        <button onclick="fixIt()" class="button">No</button>
+    </section>
+
+    <section id="section10.2" class="card hidden">
+      <p class="question">Fix it!</p>
+        <button onclick="hideFixIt()" class="button">Ok</button>
+        <button onclick="putItDown()" class="button">Put it down</button>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
+  </body>
+</html>
