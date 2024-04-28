@@ -185,6 +185,58 @@ header h1 {
     opacity: 80%;
 }
 
+@media (max-width: 1440px) {
+	.links {
+		min-width: 100%;
+		padding: 4em 24em 4em 24em;
+		color: white;
+		text-align: center;
+	}
+	
+	#newsletter {
+    padding: 4em 24em 4em 24em;
+	}
+}
+
+@media (max-width: 1360px) {
+	.links {
+		min-width: 100%;
+		padding: 4em 22em 4em 22em;
+		color: white;
+		text-align: center;
+	}
+	
+	#newsletter {
+    padding: 4em 22em 4em 22em;
+	}
+}
+
+@media (max-width: 1280px) {
+	.links {
+		min-width: 100%;
+		padding: 4em 18em 4em 18em;
+		color: white;
+		text-align: center;
+	}
+	#newsletter {
+		padding: 4em 18em 4em 18em;
+	}
+}
+
+@media (max-width: 1024px) {
+	.links {
+		min-width: 100%;
+		padding: 4em 6em 4em 6em;
+		color: white;
+		text-align: center;
+	}
+	#newsletter {
+		padding: 4em 6em 4em 6em;
+	}
+}
+
+
+
 @media (max-width: 62em) {
 
     header h1 {
