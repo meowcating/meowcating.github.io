@@ -1,4 +1,0 @@
-Sitemap: https://meowcating.online/sitemap.txt
-
-User-agent: *
-Disallow:
